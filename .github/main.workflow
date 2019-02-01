@@ -5,4 +5,5 @@ workflow "push" {
 
 action "debug" {
   uses = "./"
+  args = "hello world"
 }
