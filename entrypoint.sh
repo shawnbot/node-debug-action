@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/sh
 set -eux
 
 # which args did I get?
