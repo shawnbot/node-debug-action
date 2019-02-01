@@ -1,6 +1,9 @@
 #!/bin/sh -l
 set -eux
 
+pwd
+cd $GITHUB_WORKSPACE
+
 # pretty-print the JSON event payload
 jq -r . $GITHUB_EVENT_PATH
 
