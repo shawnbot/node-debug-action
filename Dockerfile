@@ -15,3 +15,4 @@ RUN apt-get update && apt-get install -y jq tree
 COPY . /
 
 ENTRYPOINT "/entrypoint.sh"
+CMD []
