@@ -2,7 +2,7 @@
 set -eux
 
 # which args did I get?
-echo "args: '$@'"
+echo "args: '$*'"
 
 # where am I?
 pwd
