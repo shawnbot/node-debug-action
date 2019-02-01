@@ -1,8 +1,8 @@
-workflow "debug" {
+workflow "push" {
   on = "push"
   resolves = ["debug"]
 }
 
 action "debug" {
-  uses = "."
+  uses = "./"
 }
