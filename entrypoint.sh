@@ -1,6 +1,9 @@
 #!/bin/sh -l
 set -eux
 
+# which args did I get?
+echo "args: '$@'"
+
 # where am I?
 pwd
 
