@@ -14,6 +14,4 @@ RUN apt-get update && apt-get install -y jq tree
 
 COPY . /
 
-RUN npm install --production
-
 ENTRYPOINT "/entrypoint.sh"
