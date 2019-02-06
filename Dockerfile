@@ -10,9 +10,9 @@ LABEL com.github.actions.description="Print a bunch of useful info about your en
 LABEL com.github.actions.icon="life-bouy"
 LABEL com.github.actions.color="red"
 
-RUN apt-get update && apt-get install -y jq tree
+RUN apt-get update && apt-get install -y git jq tree
 
-COPY . /
+WORKDIR /debug-action
+COPY . .
 
-ENTRYPOINT "/entrypoint.sh"
-CMD ["debug"]
+ENTRYPOINT ["/debug-action/entrypoint.sh"]
