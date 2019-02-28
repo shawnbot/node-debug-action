@@ -7,6 +7,10 @@ echo "args: '$*'"
 # where am I?
 pwd
 
+# debug some git stuff
+git status
+git config --list
+
 # print environment variables
 env
 

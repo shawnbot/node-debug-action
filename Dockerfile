@@ -7,12 +7,12 @@ LABEL maintainer="Shawn Allen <shawnbot@github.com>"
 
 LABEL com.github.actions.name="Debug Node Environment"
 LABEL com.github.actions.description="Print a bunch of useful info about your environment"
-LABEL com.github.actions.icon="life-bouy"
-LABEL com.github.actions.color="red"
+LABEL com.github.actions.icon="coffee"
+LABEL com.github.actions.color="white"
 
-RUN apt-get update && apt-get install -y jq tree
+RUN apt-get update && apt-get install -y git jq tree
 
-COPY . /
+WORKDIR /debug-action
+COPY . .
 
-ENTRYPOINT "/entrypoint.sh"
-CMD ["debug"]
+ENTRYPOINT ["/debug-action/entrypoint.sh"]
